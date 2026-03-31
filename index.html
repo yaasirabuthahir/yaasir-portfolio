@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammed Yaasir | Frontend Developer</title>
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="loader">
+    <div class="loader-circle">
+        <img src="logo.png" alt="logo">
+    </div>
+</div>
+
+<nav class="navbar">
+    <a href="index.html" target="_blank">
+        <img src="logo.png" class="logo">
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle">&#9776;</div>
+</nav>
+
+
+<div class="hero">
+
+    <!-- BACKGROUND GLOW -->
+    <div class="bg-blur"></div>
+
+    <div class="hero-container">
+
+        <div class="hero-profile">
+            <div class="img-wrapper">
+            <a href="photo.png" target="_blank">
+                <img src="photo.png" class="profile-img">
+            </a>
+</div>
+        </div>
+
+        <div class="hero-content">
+            <h1>
+                Hi, I'm <span class="glow-text">Mohammed Yaasir</span>
+            </h1>
+
+            <p id="typing"></p>
+
+            <div class="hero-buttons">
+                <button class="btn" onclick="scrollToProjects()">View Projects</button>
+                <a href="resume.pdf" class="btn-outline" target="_blank">View Resume</a>
+                    
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="tech-marquee">
+    <div class="marquee-content">
+        <span>🚀 Code. Create. Innovate.</span>
+        <span>💻 Building modern web experiences</span>
+        <span>⚡ Clean UI | Smooth UX</span>
+        <span>🔥 Frontend Developer | Problem Solver</span>
+    </div>
+</div>
+
+<section id="about" class="about-section">
+
+    <div class="about-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="about-text">
+            <h2>About Me!</h2>
+
+            <p>
+            I am a passionate and dedicated Frontend Developer with a strong interest in building modern, responsive, and user-friendly web applications. I specialize in creating clean and visually appealing user interfaces using HTML, CSS, and JavaScript, with a focus on delivering smooth and intuitive user experiences. I have hands-on experience in developing real-world projects, including dynamic web applications using PHP and MySQL, where I implemented functional features and efficient data handling. I continuously strive to improve my skills by exploring new technologies, design trends, and best practices in web development. I am highly motivated to work in a professional environment where I can contribute my creativity and technical knowledge while also learning from experienced developers and growing into a full-stack professional.
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE (OPTIONAL IMAGE / DESIGN) -->
+        <div class="about-visual">
+            <div class="about-card">
+
+                <img src="about.png" alt="About Image" class="about-img">
+
+                <h3>💻 Developer Mindset</h3>
+                <p>Clean Code | Creative UI | Problem Solving</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="skills" class="skills-section">
+
+    <h2 class="skills-title">My Technical Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card reveal">
+            <div class="skill-top">
+                <span>🐍 Python</span>
+                <span>65%</span>
+            </div>
+            <div class="bar"><div class="fill python"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-top">
+                <span>🌐 HTML</span>
+                <span>90%</span>
+            </div>
+            <div class="bar"><div class="fill html"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-top">
+                <span>🎨 CSS</span>
+                <span>85%</span>
+            </div>
+            <div class="bar"><div class="fill css"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-top">
+                <span>⚡ JavaScript</span>
+                <span>75%</span>
+            </div>
+            <div class="bar"><div class="fill js"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-top">
+                <span>🧩 PHP</span>
+                <span>70%</span>
+            </div>
+            <div class="bar"><div class="fill php"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-top">
+                <span>🗄️ MySQL</span>
+                <span>70%</span>
+            </div>
+            <div class="bar"><div class="fill mysql"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-top">
+                <span>🔧 Git</span>
+                <span>65%</span>
+            </div>
+            <div class="bar"><div class="fill git"></div></div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects" class="projects-section">
+
+    <h2 class="projects-title">My Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card reveal">
+            <h3>🚗 Shine & Drive Auto Clinic</h3>
+            <p>Car washing website built using HTML, CSS, JS with MySQL backend.</p>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                <span>MySQL</span>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <h3>🗳️ CodeSnap QR Generator</h3>
+            <p>PHP-based QR code generator web application.</p>
+            <div class="tags">
+                <span>PHP</span>
+                <span>Web App</span>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <h3>🌾 The Agri Forecast</h3>
+            <p>Crop price prediction system using Python + datasets (no API).</p>
+            <div class="tags">
+                <span>Python</span>
+                <span>ML</span>
+                <span>Data Analysis</span>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <h3>🎓 TechnoTrain Quiz Website</h3>
+            <p>Interactive quiz platform with scoring system.</p>
+            <div class="tags">
+                <span>HTML</span>
+                <span>JS</span>
+                <span>UI/UX</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact-section">
+
+    <h2 class="contact-title">Get In Touch</h2>
+
+    <div class="contact-container">
+
+        <!-- LEFT INFO -->
+        <div class="contact-info reveal">
+
+    <h3>Let’s Connect 🚀</h3>
+    <p>Feel free to reach out for collaborations, opportunities, or projects.</p>
+
+    <div class="contact-links">
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yaasirabuthahir@gmail.com&su=Hiring%20Inquiry&body=Hello Yaasir, I would like to discuss a job opportunity..." target="_blank">
+            <i class="fas fa-envelope"></i> Email Me
+        </a>
+
+        <a href="https://github.com/yaasirabuthahir" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/mohammed-yaasir-a-9054843b9" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="social-links">
+
+        <a href="https://wa.me/919080907069" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://instagram.com/_.houseofgraphics._" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://t.me/Mhmd_Yaasir" target="_blank">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+    </div>
+
+</div>
+
+        <!-- RIGHT FORM -->
+
+    <form id="contactForm">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <textarea id="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message 🚀</button>
+
+    </form>
+
+    </div>
+
+</section>
+
+
+
+<div class="hire-wrapper">
+    <a href="#contact" class="hire-btn">Hire Me 🚀</a>
+</div>
+
+<div id="scrollTop">↑</div>
+
+<div id="mailAlert">Opening Gmail... 🚀</div>
+
+<footer class="footer">
+    <p class="footer-copy">
+        Crafted with passion 🚀 
+        <span class="by">by</span>
+        <img src="logo.png" class="footer-logo">
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
